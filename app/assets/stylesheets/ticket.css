@@ -1,0 +1,16 @@
+.ticket-info {
+  border: 1px solid #DDDDDD;
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.ticket-info p {
+  color: #666666;
+  margin: 10px 0;
+}
+
+#map-canvas {
+  height: 400px;
+  margin-top: 20px;
+}

@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  request_number: MyString
+  sequence_number: MyString
+  request_type: MyString
+  request_action: MyString
+  response_due_date: 2023-06-16 18:13:48
+  primary_service_area_code: MyString
+  additional_service_area_codes: MyString
+  digsite_info: MyText
+
+two:
+  request_number: MyString
+  sequence_number: MyString
+  request_type: MyString
+  request_action: MyString
+  response_due_date: 2023-06-16 18:13:48
+  primary_service_area_code: MyString
+  additional_service_area_codes: MyString
+  digsite_info: MyText
