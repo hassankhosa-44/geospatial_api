@@ -15,9 +15,8 @@ class Api::GeospatialController < ActionController::API
       return
     end
 
-
     begin
-      excavator = ticket.excavators.create(excavator_attributes)
+      excavator = Excavator.create(excavator_attributes.merge!(ticket_id: ticket.id))
     rescue StandardError => e
       render json: { status: 'error', message: 'Failed to create Excavator', response: e.message }, status: :unprocessable_entity
       return

@@ -8,7 +8,7 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARdStEOiSbECzbuOSy0tFgHNWIwb4GCK8&libraries=geometry"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_API_KEY'] %>&libraries=geometry"></script>    
   </head>
 
   <body>

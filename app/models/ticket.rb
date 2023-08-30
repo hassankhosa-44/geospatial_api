@@ -1,3 +1,4 @@
 class Ticket < ApplicationRecord
-  has_many :excavators
+  has_one :excavator
+  validates :request_number, presence: true, uniqueness: true
 end
