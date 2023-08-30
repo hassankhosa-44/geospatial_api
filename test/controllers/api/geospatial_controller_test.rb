@@ -77,8 +77,8 @@ class Api::GeospatialControllerTest < ActionDispatch::IntegrationTest
     assert_equal "Failed to create Excavator", response.parsed_body["message"]
   end
 
-	def json_data(email = "example@example.com")
- 		{
+  def json_data(email = "example@example.com")
+    {
       "RequestNumber": "09252012-00001",
       "SequenceNumber": "2421",
       "RequestType": "Normal",
@@ -116,6 +116,6 @@ class Api::GeospatialControllerTest < ActionDispatch::IntegrationTest
         "Zip": "55555",
         "CrewOnsite": "true"
       }
-    }		
-	end  
+    }   
+  end  
 end

@@ -8,9 +8,11 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARdStEOiSbECzbuOSy0tFgHNWIwb4GCK8&libraries=geometry"></script>
   </head>
 
   <body>
+    <%= render 'layouts/flash_messages' %>
     <%= yield %>
   </body>
 </html>
