@@ -10,31 +10,21 @@
 
 <div class="ticket-info">
   <h2>Associated Excavators</h2>
-  <% @ticket.excavators.each do |excavator| %>
-    <div>
-      <p><strong>Company Name:</strong> <%= excavator.company_name %></p>
-      <p><strong>Contact Name:</strong> <%= excavator.contact_name %></p>
-      <p><strong>Email:</strong> <%= excavator.email %></p>
-      <p><strong>Phone Number:</strong> <%= excavator.phone_no %></p>
-    </div>
-  <% end %>
+  <div>
+    <p><strong>Company Name:</strong> <%= @ticket.excavator.company_name %></p>
+    <p><strong>Contact Name:</strong> <%= @ticket.excavator.contact_name %></p>
+    <p><strong>Email:</strong> <%= @ticket.excavator.email %></p>
+    <p><strong>Phone Number:</strong> <%= @ticket.excavator.phone_no %></p>
+  </div>
 </div>
 
 <div class="ticket-info">
   <h2>DigsiteInfo WellKnownText<h2>
-  <div id="map-canvas" data-polygon = '<%= @ticket.digsite_info %>'></div>
+  <div
+    id="map-canvas"
+    data-controller="map"
+    data-map-coords-value="<%= @ticket.digsite_info %>"
+  ></div>
 </div>
+
 <%= link_to 'Back', tickets_path %>
-
-
-<script type="text/javascript">
-  if (!initializeGoogle) {
-    var initializeGoogle = window?.initializeMap || function () {};    
-  }
-
-  if (google?.maps) {
-    initializeGoogle();
-  } else {
-    google?.maps?.event?.addDomListener(window, 'load', initializeGoogle);
-  }
-</script>
