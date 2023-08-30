@@ -1,0 +1,126 @@
+ /* Flash Message */
+
+ .flash {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.flash.notice {
+  background-color: #E2F8FF;
+  color: #217CA3;
+}
+
+.flash.success {
+  background-color: #DFF2BF;
+  color: #1B5E20;
+}
+
+.flash.alert {
+  background-color: #FFF3CD;
+  color: #8D6E0F;
+}
+
+.flash-message p {
+  margin: 0;
+}
+
+.flash-message {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #FFD2D2;
+  color: #C62828;
+  margin-top: 40px;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  color: #999999;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-button:hover {
+  color: #666666;
+}
+
+.flash.error {
+  background-color: #FFD2D2;
+  color: #C62828;
+}
+
+ /* Table data */
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F7F7F7;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+}
+
+h1 {
+  color: #333333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #DDDDDD;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #F2F2F2;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #F2F2F2;
+}
+
+tbody tr:hover {
+  background-color: #EAEAEA;
+}
+
+a {
+  color: #3366CC;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ /* Home Button */
+
+
+.homepage-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #3366CC;
+  color: #FFFFFF;
+  border-radius: 4px;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.close-button:hover {
+  color: #666666;
+}

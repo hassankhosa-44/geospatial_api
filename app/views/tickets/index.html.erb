@@ -1,0 +1,27 @@
+<h1>Tickets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Request Number</th>
+      <th>Sequence Number</th>
+      <th>Request Type</th>
+      <th>Request Action</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tickets.each do |ticket| %>
+      <tr>
+        <td><%= ticket.request_number %></td>
+        <td><%= ticket.sequence_number %></td>
+        <td><%= ticket.request_type %></td>
+        <td><%= ticket.request_action %></td>
+        <td><%= link_to 'Show', ticket_path(ticket) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<a class="homepage-button" href="/">Home</a>
+

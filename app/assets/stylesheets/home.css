@@ -1,0 +1,28 @@
+.homepage h1 {
+  color: #333333;
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.homepage p {
+  color: #666666;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.homepage ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.homepage li {
+  margin-bottom: 10px;
+}
+
+.homepage a {
+  color: #3366CC;
+  text-decoration: none;
+  font-size: 20px;
+}
