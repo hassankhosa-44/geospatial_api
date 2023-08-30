@@ -1,0 +1,28 @@
+<h1>Excavators</h1>
+
+<a class="homepage-button" href="/">Home</a>
+
+<table>
+  <thead>
+    <tr>
+      <th>Company Name</th>
+      <th>Contact Name</th>
+      <th>Email</th>
+      <th>Phone Number</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @excavators.each do |excavator| %>
+      <tr>
+        <td><%= excavator.company_name %></td>
+        <td><%= excavator.contact_name %></td>
+        <td><%= excavator.email %></td>
+        <td><%= excavator.phone_no %></td>
+        <td>
+          <%= link_to 'Show', excavator %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

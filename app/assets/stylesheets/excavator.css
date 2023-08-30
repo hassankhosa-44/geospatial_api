@@ -1,0 +1,11 @@
+.excavator-info {
+  border: 1px solid #DDDDDD;
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.excavator-info p {
+  color: #666666;
+  margin: 10px 0;
+}

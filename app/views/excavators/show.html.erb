@@ -1,0 +1,22 @@
+<div class="excavator-info">
+<h1>Excavator Details</h1>
+
+<p><strong>Company Name:</strong> <%= @excavator.company_name %></p>
+<p><strong>Contact Name:</strong> <%= @excavator.contact_name %></p>
+<p><strong>Address:</strong> <%= @excavator.address %></p>
+<p><strong>City:</strong> <%= @excavator.city %></p>
+<p><strong>State:</strong> <%= @excavator.state %></p>
+<p><strong>Email:</strong> <%= @excavator.email %></p>
+<p><strong>Phone Number:</strong> <%= @excavator.phone_no %></p>
+<p><strong>ZIP Code:</strong> <%= @excavator.zip %></p>
+<p><strong>Crew on Site:</strong> <%= @excavator.crew_on_site %></p>
+<% if @excavator.ticket_id %>
+  <% ticket = Ticket.find_by(id: @excavator.ticket_id) %>
+  <% if ticket %>
+    <p><strong>Associated Ticket: </strong><%= link_to ticket.id, ticket_path(ticket) %></p>
+  <% end %>
+<% end %>
+</div>
+
+<%= link_to 'Back', excavators_path %>
+
